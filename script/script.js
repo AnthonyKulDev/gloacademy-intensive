@@ -1,3 +1,5 @@
+'use strict';
+
 const DATA = {
 	whichSite: ['landing', 'multiPage', 'onlineStore'],
 	price: [4000, 8000, 26000],
@@ -12,10 +14,6 @@ const DATA = {
 	deadlinePercent: [20, 17, 15]
 };
 
-
-
-
-
 const startButton = document.querySelector('.start-button'),
       firstScreen = document.querySelector('.first-screen'),
       mainForm = document.querySelector('.main-form'),
@@ -28,7 +26,7 @@ const startButton = document.querySelector('.start-button'),
 let adapt = document.querySelector('#adapt');
 let mobileTemplates = document.querySelector('#mobileTemplates');
 
-    mobileTemplates.disabled = !adapt.checked ? true : false;
+mobileTemplates.disabled = !adapt.checked ? true : false;
 
 function showElem(elem) {
   elem.style.display = 'block';
